@@ -1,146 +1,45 @@
-!!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title HTML Web Page
-    %link{:href => "Home.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %title Frozen Yogurt Shop
+    %link{:href => "../home_page.scss", :rel => "stylesheet", :type => "text/css"}
   %body
-    %h1.brand Paytm
-    %input{:name => "searching", :type => "text"}/
-    %button{:name => "button", :type => "button", :value => "ok"} Search
-    %header
-      %a{:href => "#", :target => "_self"} Home
-      %a{:href => "#", :target => "_self"} Mobile and Accessories
-      %a{:href => "#", :target => "_self"} Smart Phones
-    %main
-      %img{:alt => "image0", :src => "./Images/0.jpeg"}/
-      %div
-        %ul
-          %li
-            %img{:alt => "image2", :src => "./Images/2.jpeg"}/
-          %li
-            %img{:alt => "image3", :src => "./Images/3.jpeg"}/
-          %li
-            %img{:alt => "image4", :src => "./Images/4.jpeg"}/
-      %div
-        %h3
-          Apple
-          %em iPhone7
-          32GB(Black)
-        %a{:href => "#", :target => "_blank"} #Apple
-      %div
-        %strong 2 Products sold in 30minutes
-      %div
-        %ul
-          %li Screen Size:11.93cm(4.7)
-          %li Camera:12 MP Rear/7 MP Front
-          %li RAM/ROM:2 GB/32 GB
-          %li Sim Type:Single Sim
-      %div
-        %button{:name => "button", :type => "button", :value => "buy"}
-          Buy For Rs 51694
-          %strike Rs 60000
-          %strong 14% Discount
-        %strong Add to Wishlist
-      %div
-        %div
-          %p Offers Available
-          %p (Promo code can be applyed from the cart)
-        %div
-          %strong 2 Offers Available
-          %ul
-            %li
-              %strong Use Promocode-A5K
-              %p
-                A5K: Free Movie Ticket* and FLAT Rs 5000 cashback* on shopping order (Max Cashback Rs. 5,000).
-                Your unique movie ticket promo code will be sent to you via email. COD not applicable.
-              %strong Terms And Conditions
-            %li
-              %strong Use PromoCode-WINREDMI
-              %p
-                Promo code for communication purposes only, no need to apply.
-                Shop for ₹1999 or above andqualify to win a Redmi 3S mobile phone every hour.
-              %strong Terms and Conditions
-        %div
-          %strong Shipping and Delivery
-          %p Not available for delivery at your location yet (431703)
-          %a{:href => "#", :target => "_self"} Change location
-        %a{:href => "#", :target => "_self"} Report This Product
-      %div
-        %div
-          %strong Warrenty Details
-          %ul
-            %li WarrentySummary
-            %li 1 year manufacturer warranty on phone and 6 months on in-box accessories
-        %div
-          %strong Generals
-          %p
-            iPhone 7 dramatically improves the most important aspects of the iPhone experience. It introduces advanced new camera systems.
-            The best performance and battery life ever in an iPhone. Immersive stereo speakers.
-            The brightest, most colourful iPhone display. Splash and water resistance.
-            1 And it looks every bit as powerful as it is. This is iPhone 7.
-          %ul
-            %li Brand Apple
-            %li ProductCode MOBAPPLE-IPHONENGP197413472D424C
-            %li Processor A10 Fusion Chip (64 bit architecture) with M10 motion processor
-            %li OperatingSystem iOS 10.0.1, upgradable to iOS 10.0.2r
-        %div
-          %strong Memory
-          %ul
-            %li InternalMemory 32GB
-            %li ExpandableMemory No
-        %div
-          %strong Display And Resolution
-          %ul
-            %li DisplayType LED-backlit IPS
-            %li ScreenResolution 1334x750
-            %li OtherDisplay Features Multi-Touch display with IPS technology
-        %div
-          %strong Camera And Video Features
-          %ul
-            %li PrimaryCamera 12Megapixel
-            %li PrimaryCamera Features Photo geotagging
-        %div
-          %strong Battery And Power Features
-          %ul
-            %li BattaryType Li-Ion
-            %li RemovableBattery No
-        %div
-          %strong Internet And Connectivity
-          %ul
-            %li
-              %b 2G
-              Yes
-            %li 3G Yes
-            %li 4G Yes
-        %div
-          %strong Multimedia Features
-          %ul
-            %li MusicPlayer Yes
-            %li Video Player Yes
-            %li FM Radio No
-        %div
-          %strong Environmental Features
-          %ul
-            %li Operating ambient temperature 0° to 35° C (32° to 95° F)
-            %li Relative humidity 5% to 95% non-condensing
-            %li Operating altitude tested up to 3,000 metres (10,000 feet)
-        %div
-          %strong Shipping Details
-          %ul
-            %li Estimated Arrival 3 - 6Days
-            %li
-              Return Policy
-              %p
-                Seller will accept returns within a 15 days from date of delivery of the item only in the case of damaged,
-                defective or wrong products received
-        %footer
-          %a{:href => "#", :target => "_self"} About Us
-          %a{:href => "#", :target => "_self"} Partner with Us
-          %a{:href => "#", :target => "_self"} Terms and Conditions
-          %a{:href => "#", :target => "_self"} Blog
-          %a{:href => "#", :target => "_self"} media
-          %a{:href => "#", :target => "_self"} Customer Service
-          %a{:href => "#", :target => "_self"} Grivance Polacy
-          %a{:href => "#", :target => "_self"} Bug Bounty
-          %a{:href => "#", :target => "_self"} Reacharge Partner
+    #page
+      #body.home
+        .header
+          %img{:alt => "", :src => "../images/bg-home.jpg"}/
+          %div
+            %a{:href => "#"} Freeze Delight
+        .body
+          %div
+            %div
+              %h1 NEW PRODUCT
+              %h2 The Twist of Healthy Yogurt
+              %p This website template has been designed by freewebsitetemplates.com for you, for free. You can replace all this text with your own text.
+            %img{:alt => "", :src => "../images/yogurt.jpg"}/
+        .footer
+          %div
+            %ul
+              %li
+                %a.product{:href => "#"}
+                %h1 PRODUCTS
+              %li
+                %a.about{:href => "#"}
+                %h1 OUR STORY
+              %li
+                %a.flavor{:href => "#"}
+                %h1 FLAVORS
+              %li
+                %a.contact{:href => "#"}
+                %h1 OUR LOCATION
+      
+
+
+
+
+
+
+
+
+
+
+

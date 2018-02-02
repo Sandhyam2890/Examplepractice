@@ -1,0 +1,26 @@
+%html
+  %head
+  %body
+    #page
+      #body.contact
+        .header
+          %div
+            %h1 Contact Us
+        .body
+          %div
+            %div
+              %img{:alt => "", :src => "../images/check-in.png"}/
+              %h1 UNIT 0123 , ABC BUILDING, BUSSINESS PARK
+              %p If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+        .footer
+          .contact
+            %h1 INQUIRY FORM
+            %form{:action => "index.html"}
+              %input{:name => "Name", :onblur => "this.value=!this.value?'Name':this.value;", :onclick => "this.value='';", :onfocus => "this.select()", :type => "text", :value => "Name"}/
+              %input{:name => "Email", :onblur => "this.value=!this.value?'Email':this.value;", :onclick => "this.value='';", :onfocus => "this.select()", :type => "text", :value => "Email"}/
+              %input{:name => "Subject", :onblur => "this.value=!this.value?'Subject':this.value;", :onclick => "this.value='';", :onfocus => "this.select()", :type => "text", :value => "Subject"}/
+              %textarea{:cols => "50", :name => "meassage", :rows => "7"} Share your thoughts
+              %input#submit{:type => "submit", :value => "Send"}/
+          .section
+            %h1 WE’D LOVE TO HEAR FROM YOU.
+            %p If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.

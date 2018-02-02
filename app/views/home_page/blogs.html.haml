@@ -1,0 +1,40 @@
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title blog - Frozen Yogurt Shop
+    %link{:href => "css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "css/mobile.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "js/mobile.js", :type => "text/javascript"}
+  %body
+    #page
+      #body
+        .header
+          %div
+            %h1 Blog
+        .blog
+          .featured
+            %ul
+              %li
+                %img{:alt => "", :src => "../images/new-chills.png"}/
+                %div
+                  %h1 NEW CHILLS FOR SUMMER
+                  %span By Admin on November 28, 2023
+                  %p You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.
+                  %a.more{:href => "singlepost.html"} Read More
+              %li
+                %img{:alt => "", :src => "../images/berries.png"}/
+                %div
+                  %h1 BERRIES ON THE GROVE
+                  %span By Admin on November 28, 2023
+                  %p You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template.
+                  %a.more{:href => "singlepost.html"} Read More
+            %a.load{:href => "blog.html"} Load More
+          .sidebar
+            %h1 Recent Posts
+            %img{:alt => "", :src => "../images/on-diet.png"}/
+            %h2 ON THE DIET
+            %span By Admin on November 28, 2023
+            %p You can replace all this text with your own text. You can remove any link to our website from this website template.
+            %a.more{:href => "singlepost.html"} Read More

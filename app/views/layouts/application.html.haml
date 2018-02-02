@@ -1,0 +1,39 @@
+%html
+  %head
+    %title Examplepractice
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    #header
+      %div
+        %a.logo{:href => root_path}
+          %img{:alt => "", :src => "../images/logo.png"}
+        %ul#navigation
+          %li.selected
+            %a{:href => root_path} Home
+          %li.menu
+            %a{:href => aboutus_path} About
+            %ul.primary
+              %li
+                %a{:href => "#"} Product
+          %li.menu
+            %a{:href => blogs_path} Blog
+            %ul.secondary
+              %li
+                %a{:href => "#"} Single post
+          %li.menu
+            %a{:href => contactus_path} Contact
+            %ul.third
+              %li
+                %a{:href => "#"} Single post
+    = yield
+    #footer
+      %div
+        .connect
+          %a.facebook{:href => "http://freewebsitetemplates.com/go/facebook/"} facebook
+          %a.twitter{:href => "http://freewebsitetemplates.com/go/twitter/"} twitter
+          %a.googleplus{:href => "http://freewebsitetemplates.com/go/googleplus/"} googleplus
+          %a.pinterest{:href => "http://pinterest.com/fwtemplates/"} pinterest
+        %p © 2023 Freeeze. All Rights Reserved.
+
