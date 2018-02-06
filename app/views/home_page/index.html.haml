@@ -3,12 +3,12 @@
     %title Frozen Yogurt Shop
     %link{:href => "../home_page.scss", :rel => "stylesheet", :type => "text/css"}
   %body
-    #page
+    .page
       #body.home
         .header
-          %img{:alt => "", :src => "../images/bg-home.jpg"}/
+          %img{:alt => "", :src => "../images/bg-home.jpg"}
           %div
-            %a{:href => "#"} Freeze Delight
+            %a{:href => root_path} Freeze Delight
         .body
           %div
             %div
@@ -20,7 +20,7 @@
           %div
             %ul
               %li
-                %a.product{:href => "#"}
+                %a.product{:href =>"#"}
                 %h1 PRODUCTS
               %li
                 %a.about{:href => "#"}
